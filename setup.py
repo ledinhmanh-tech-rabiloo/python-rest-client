@@ -42,6 +42,6 @@ setup(
     packages=find_packages(),
     include_package_data=True,
     long_description=long_description,
-    download_url='https://github.com/thingsboard/thingsboard-python-rest-client/archive/refs/tags/%s.tar.gz' % VERSION,
+    download_url='https://github.com/ledinhmanh-tech-rabiloo/python-rest-client/archive/refs/tags/%s.tar.gz' % VERSION,
     python_requires=">=3.7",
 )
