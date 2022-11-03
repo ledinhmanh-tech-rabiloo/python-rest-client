@@ -14,9 +14,9 @@
 #      limitations under the License.
 #
 
-from tb_rest_client.rest_client_base import *
-from tb_rest_client.api.api_pe import *
-from tb_rest_client.models.models_pe import *
+from tb_rest_client_v4.rest_client_base import *
+from tb_rest_client_v4.api.api_pe import *
+from tb_rest_client_v4.models.models_pe import *
 
 logger = getLogger(__name__)
 

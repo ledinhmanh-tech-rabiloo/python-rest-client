@@ -28,10 +28,10 @@ import tempfile
 import six
 from six.moves.urllib.parse import quote
 
-from tb_rest_client.configuration import Configuration
-import tb_rest_client.models.models_ce
-import tb_rest_client.models.models_pe
-from tb_rest_client import rest
+from tb_rest_client_v4.configuration import Configuration
+import tb_rest_client_v4.models.models_ce
+import tb_rest_client_v4.models.models_pe
+from tb_rest_client_v4 import rest
 
 
 class ApiClient(object):
@@ -322,19 +322,19 @@ class ApiClient(object):
             if klass in self.NATIVE_TYPES_MAPPING:
                 klass = self.NATIVE_TYPES_MAPPING[klass]
             try:
-                found_class = getattr(tb_rest_client.models.models_pe, klass)
+                found_class = getattr(tb_rest_client_v4.models.models_pe, klass)
                 if sorted(list(found_class.attribute_map.values())) == sorted(list(data.keys())):
                     klass = found_class
 
                 # if all(attr in list(found_class.attribute_map.values()) for attr in list(data.keys())):
                 #     klass = found_class
                 else:
-                    found_class = getattr(tb_rest_client.models.models_ce, klass)
+                    found_class = getattr(tb_rest_client_v4.models.models_ce, klass)
                     # if sorted(list(found_class.attribute_map.values())) == sorted(list(data.keys())):
                     klass = found_class
 
             except AttributeError:
-                found_class = getattr(tb_rest_client.models.models_ce, klass)
+                found_class = getattr(tb_rest_client_v4.models.models_ce, klass)
                 # if all(attr in list(found_class.attribute_map.values()) for attr in list(data.keys())):
                 # if sorted(list(found_class.attribute_map.values())) == sorted(list(data.keys())):
                 klass = found_class

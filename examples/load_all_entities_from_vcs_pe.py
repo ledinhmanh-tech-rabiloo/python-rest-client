@@ -4,9 +4,9 @@ from random import choice
 from string import hexdigits
 from time import sleep
 
-from tb_rest_client.models.models_pe import EntityVersion, EntityTypeVersionLoadConfig, EntityTypeVersionLoadRequest
-from tb_rest_client.rest import ApiException
-from tb_rest_client.rest_client_pe import RestClientPE
+from tb_rest_client_v4.models.models_pe import EntityVersion, EntityTypeVersionLoadConfig, EntityTypeVersionLoadRequest
+from tb_rest_client_v4.rest import ApiException
+from tb_rest_client_v4.rest_client_pe import RestClientPE
 
 logging.basicConfig(level=logging.DEBUG,
                     format='%(asctime)s - %(levelname)s - %(module)s - %(lineno)d - %(message)s',

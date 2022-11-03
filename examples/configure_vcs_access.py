@@ -2,9 +2,9 @@ import logging
 from argparse import ArgumentParser
 from os.path import pathsep
 
-from tb_rest_client.models.models_ce.repository_settings import RepositorySettings
-from tb_rest_client.rest import ApiException
-from tb_rest_client.rest_client_ce import RestClientCE
+from tb_rest_client_v4.models.models_ce.repository_settings import RepositorySettings
+from tb_rest_client_v4.rest import ApiException
+from tb_rest_client_v4.rest_client_ce import RestClientCE
 
 logging.basicConfig(level=logging.DEBUG,
                     format='%(asctime)s - %(levelname)s - %(module)s - %(lineno)d - %(message)s',

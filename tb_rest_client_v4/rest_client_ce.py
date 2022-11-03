@@ -14,7 +14,7 @@
 #      limitations under the License.
 #
 
-from tb_rest_client.rest_client_base import *
+from tb_rest_client_v4.rest_client_base import *
 
 logger = getLogger(__name__)
 

@@ -14,7 +14,7 @@ import pprint
 import re  # noqa: F401
 
 import six
-from tb_rest_client.models.models_ce import EntityFilter  # noqa: F401,E501
+from tb_rest_client_v4.models.models_ce import EntityFilter  # noqa: F401,E501
 
 class AssetSearchQueryFilter(EntityFilter):
     """

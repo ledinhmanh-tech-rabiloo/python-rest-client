@@ -17,7 +17,7 @@ import re  # noqa: F401
 # python 2 and python 3 compatibility library
 import six
 
-from tb_rest_client.api_client import ApiClient
+from tb_rest_client_v4.api_client import ApiClient
 
 
 class CloudEndpointControllerApi(object):

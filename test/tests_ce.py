@@ -1,7 +1,7 @@
 import unittest
 
-from tb_rest_client.rest_client_ce import *
-from tb_rest_client.models.models_ce import *
+from tb_rest_client_v4.rest_client_ce import *
+from tb_rest_client_v4.models.models_ce import *
 
 
 class TBClientCETests(unittest.TestCase):

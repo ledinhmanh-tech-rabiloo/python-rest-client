@@ -16,8 +16,8 @@
 import logging
 from json import load
 # Importing models and REST client class from Professional Edition version
-from tb_rest_client.rest_client_pe import *
-from tb_rest_client.rest import ApiException
+from tb_rest_client_v4.rest_client_pe import *
+from tb_rest_client_v4.rest import ApiException
 
 
 logging.basicConfig(level=logging.DEBUG,
